@@ -10,15 +10,11 @@
   padding: 50px;
 }
 
-.modal-btn-container{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top:30px;
-}
+
 
 .modal-btn{
   font-size:20px;
+  margin-right: 200px;
 }
 
 .App-logo {

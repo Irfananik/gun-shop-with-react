@@ -14,3 +14,10 @@
     color:rgb(40, 128, 16);
     margin-left: 200px;
 }
+
+.cart-length{
+    background-color:rgb(246, 244, 244);
+    border-radius: 25px;
+    padding: 16px;
+    margin-left:10px;
+}

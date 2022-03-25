@@ -47,9 +47,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header/>
+      <Header openModal = {openModal} cart = {cart}/>
       <div className="modal-btn-container">
-        <button className="modal-btn" onClick={openModal}>Open Your Cart list</button>
+        
       </div>
       <div className = "gun-container">
         {
@@ -62,7 +62,7 @@ function App() {
         style={customStyles}
         contentLabel="Example Modal"
       >
-        <button onClick={closeModal}>Clode</button>
+        <button onClick={closeModal}>Close</button>
         <div>
         {
           cart.map(item => <h3 key = { item.id}> {item.id} {item.name}</h3>)
