@@ -6,9 +6,11 @@ import Header from './components/Header/Header';
 function App() {
   const [guns,setGuns] = useState([])
   const [cart,setCart] = useState([])
+  console.log(cart)
 
-  const handleCart = (id) => {
-    console.log(id)
+  const handleCart = (gun) => {
+    const newCart = [...cart, gun]
+    setCart(newCart)
   }
 
   useEffect(() => {
@@ -20,6 +22,11 @@ function App() {
   return (
     <div className="App">
       <Header/>
+      <div>
+        {
+          cart.map(item => <h3 key = { item.id}> {item.id} {item.name}</h3>)
+        }
+      </div>
       <div className = "gun-container">
         {
           guns.map(gun => <Cart key={gun.id} gunData = {gun} handleCart={handleCart}/>)

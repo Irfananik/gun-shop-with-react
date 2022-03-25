@@ -3,7 +3,7 @@ import './Cart.css'
 import { FiShoppingCart } from 'react-icons/fi';
 
 const Cart = ({gunData,handleCart}) => {
-    const {name,img,bullet,action,price,capacity,id} = gunData
+    const {name,img,bullet,action,price,capacity} = gunData
     return (
         <div className="cart-container">
             <div>
@@ -13,7 +13,7 @@ const Cart = ({gunData,handleCart}) => {
                 <p>Action: {action}</p>
                 <p>Price: {price}</p>
                 <p>Capacity: {capacity}</p>
-                <button onClick={() => handleCart(id)} className="cart-btn">
+                <button onClick={() => handleCart(gunData)} className="cart-btn">
                     <FiShoppingCart className="cart-icon"/>
                     add to cart
                 </button>
