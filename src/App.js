@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import './App.css';
+import Cart from './components/Cart/Cart';
 import Header from './components/Header/Header';
 
 function App() {
@@ -14,9 +15,11 @@ function App() {
   return (
     <div className="App">
       <Header/>
-      {
-        guns.map(gun => <h3>{gun.name}</h3>)
-      }
+      <div className = "gun-container">
+        {
+          guns.map(gun => <Cart key={gun.id} gunData = {gun}/>)
+        }
+      </div>
     </div>
   );
 }
