@@ -1,0 +1,14 @@
+.header-container{
+    background-color: aliceblue;
+    height: 80px;
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 16px;
+    
+}
+.header-logo{
+    font-size:28px;
+    color:rgb(40, 128, 16);
+    margin-left: 200px;
+}
